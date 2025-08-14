@@ -24,16 +24,6 @@ HTTP (API calls)
 Mathematical geolocation (Haversine distance, bearing calculation)
 
 
-## 📂 Project Structure
-text
-lib/
-├── main.dart            # Entry point
-├── route_viewer.dart    # Core map + animation logic
-├── model/
-│   └── place.dart       # Data structure for locations
-└── service/
-    └── location_service.dart    
-    └── place_service.dart 
     
 ## 🚀 Quick Start
 Clone the repo
