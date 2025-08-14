@@ -1,16 +1,55 @@
-# route_navigation
+## 🚗 Flutter Route Navigation with OSRM & OpenStreetMap
+Animate a car along the shortest path between two locations using Flutter, OpenStreetMap, and OSRM’s routing engine. Perfect for logistics apps, travel planners, or location-based services!
 
-A new Flutter project.
+## 🌟 Key Features
+Real-time car animation along calculated routes
 
-## Getting Started
+Direction-aware car icon (auto-rotates to follow the path)
 
-This project is a starting point for a Flutter application.
+OSRM API integration for optimal route calculation
 
-A few resources to get you started if this is your first Flutter project:
+Polyline decoding to render complex routes
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Interactive map with flutter_map and latlong2
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠 Tech Stack
+Flutter (UI + Logic)
+
+flutter_map (Interactive maps)
+
+OSRM API (Open Source Routing Machine)
+
+HTTP (API calls)
+
+Mathematical geolocation (Haversine distance, bearing calculation)
+
+
+## 📂 Project Structure
+text
+lib/
+├── main.dart            # Entry point
+├── route_viewer.dart    # Core map + animation logic
+├── model/
+│   └── place.dart       # Data structure for locations
+└── service/
+    └── location_service.dart    
+    └── place_service.dart 
+    
+## 🚀 Quick Start
+Clone the repo
+
+Add your OSRM API endpoint (or use the public demo server)
+
+Run flutter pub get
+
+Launch with flutter run
+
+## 🤝 Contributions Welcome!
+
+Open issues/PRs for:
+
+Improved animations
+
+Alternative routing engines (GraphHopper, Mapbox)
+
+Offline map support
